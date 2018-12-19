@@ -1,0 +1,33 @@
+[data]
+train_data_dir  = /home/haoyum/UCIHand/train/train_data
+train_label_dir = /home/haoyum/UCIHand/train/train_label
+save_dir        = ckpt/
+
+test_data_dir  = /home/haoyum/UCIHand/test/test_data
+test_label_dir = /home/haoyum/UCIHand/test/test_label
+
+
+[training]
+learning_rate   = 8e-6
+batch_size      = 16
+epochs          = 50
+begin_epoch     = 0
+
+
+[test]
+best_model       =30
+predict_label_dir = save/test_label
+predict_labels_dir = save/test_labels
+pck_save_dir    = save/test_pck.csv
+
+
+[predict]
+best_model       =30
+predict_data_dir = /home/haoyum/Tdata/crop_img
+predict_label_dir = /home/haoyum/Tdata/predict_label
+predict_labels_dir = /home/haoyum/Tdata/predict_labels
+
+
+
+
+
